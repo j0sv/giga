@@ -11,5 +11,12 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require turbolinks
+//= require jquery
+//= require materialize
 //= require_tree .
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    $(".button-collapse").sideNav();
+    $('select').material_select();
+});

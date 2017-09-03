@@ -1,0 +1,8 @@
+<h1>Editing Dish Ingredient</h1>
+<strong>Dish: </strong> <%= @dish_ingredient.dish.name %> <br>
+<strong>Ingredient: </strong> <%= @dish_ingredient.ingredient.name %>
+
+<%= render 'form', dish_ingredient: @dish_ingredient %>
+
+<%= link_to 'Show', @dish_ingredient %> |
+<%= link_to 'Back', dish_ingredients_path %>

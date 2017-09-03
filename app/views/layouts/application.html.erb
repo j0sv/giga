@@ -9,6 +9,22 @@
   </head>
 
   <body>
+
+  <div class="navbar-fixed">
+   <nav>
+     <div class="nav-wrapper teal lighten-2 ">
+        <%= link_to "Giga", dishes_path, class: "brand-logo" %>
+        <ul id="nav-mobile" class="right">
+          <li><%= link_to "Dishes", dishes_path %></li>
+          <li><%= link_to "Ingredients", ingredients_path %></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
     <%= yield %>
+  </div>
+
   </body>
 </html>
